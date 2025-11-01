@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shifat Islam Ashiq</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+      background:#fff;
+      color:#111;
+      line-height:1.6;
+    }
+    header{
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:70px 20px 50px;
+    }
+    .logo{
+      font-size:42px;
+      font-weight:800;
+      letter-spacing:3px;
+      border:3px solid #fff;
+      display:inline-block;
+      padding:10px 22px;
+      border-radius:6px;
+      margin-bottom:20px;
+    }
+    h1{
+      font-size:32px;
+      margin-bottom:10px;
+      font-weight:700;
+    }
+    h2{
+      font-size:24px;
+      margin-bottom:12px;
+      text-transform:uppercase;
+      border-bottom:2px solid #000;
+      display:inline-block;
+      padding-bottom:4px;
+    }
+    p{max-width:800px;margin:0 auto 20px;}
+    section{
+      padding:60px 20px;
+      text-align:center;
+    }
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+      max-width:900px;
+      margin:0 auto;
+    }
+    .card{
+      border:1px solid #000;
+      padding:30px 15px;
+      border-radius:6px;
+      transition:.3s;
+    }
+    .card:hover{
+      background:#000;
+      color:#fff;
+    }
+    footer{
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:10px 20px;
+      border:1px solid #000;
+      text-decoration:none;
+      color:#000;
+      border-radius:5px;
+      font-weight:600;
+      transition:.3s;
+    }
+    .btn:hover{
+      background:#000;
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SIA</div>
+    <h1>Shifat Islam Ashiq</h1>
+    <p>Personal Portfolio • Developer • Designer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hey! I’m Shifat Islam Ashiq — a creative mind who loves clean design, modern web development, and simple elegance. I focus on turning ideas into visual reality with passion and precision.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Web Design</h3><p>Clean, minimal & user-friendly design layouts.</p></div>
+      <div class="card"><h3>Development</h3><p>HTML, CSS, JavaScript – building responsive sites.</p></div>
+      <div class="card"><h3>Creativity</h3><p>Unique thinking with balanced simplicity & style.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to collaborate or say hello?</p>
+    <a href="mailto:you@example.com" class="btn">Send Email</a>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Shifat Islam Ashiq — All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
